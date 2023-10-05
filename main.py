@@ -4,13 +4,11 @@ import googletrans
 from googletrans import Translator
 
 
-# Create a dictionary of languages and their codes
+
 language = googletrans.LANGUAGES
 
-# Get a list of language names
 lang_value = list(language.values())
 
-# Create a list of language codes
 lang1 = list(language.keys())
 translator = Translator()
 
@@ -50,8 +48,8 @@ f2.place(x=300, y=100, width=150, height=150)
 text2 = Text(f2, font="Roboto 14", bg='white', relief=GROOVE, wrap=WORD)
 text2.place(x=0, y=0, width=140, height=140)
 
-# Removed () from command parameter to avoid immediate execution
+
 button = Button(window, text='Translate', font=('normal', 15), bg='#87CEEB', command=translate)
-button.place(x=230, y=300)  # button which when triggered performs translation
+button.place(x=230, y=300)  
 
 window.mainloop()
